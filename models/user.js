@@ -10,8 +10,8 @@ const UserSchema = new mongoose.Schema({
   salt: { type: String },
   otp: String,
   otpExpiration: Date,
-  name: String,
-  bio: String,
+ // name: String,
+  //bio: String,
 });
 
 UserSchema.pre('save', async function (next) {
